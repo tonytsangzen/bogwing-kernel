@@ -6,7 +6,7 @@ ARCH=arm64
 all:vmlinux-${VERSION}
 
 linux-${VERSION}.tar.xz:
-	wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux--${VERSION}.tar.xz
+	wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-${VERSION}.tar.xz
 
 linux-${VERSION}:linux-${VERSION}.tar.xz
 	tar xvf $<
